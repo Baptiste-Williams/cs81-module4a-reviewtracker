@@ -43,6 +43,12 @@ function totalReadingMinutes(log) {
  * @param {Array} log - An array of reading entries
  * @returns {string|null} The title of the most frequently read book.
  */
+
+//Suggested Improvement:
+//This function only returns one book, even if multiple books were read the same number of times.
+// To improve accuracy, it could return an array of all books tied for most read.
+// This would give show a more complete picture of the users reading habits.
+
 function mostReadBook(log) {
   const bookCounts = {}; //  This ject will count how many times each book appears
   for (let entry of log) {
