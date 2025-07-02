@@ -94,3 +94,9 @@ console.log("Total minutes read:", totalReadingMinutes(readingLog));
 
 // Print the book that was read the most times
 console.log("Most read book:", mostReadBook(readingLog));
+// Test case: simulate a tie between two books
+addReadBook("Sunday", "The Hobbit", 25); // Now "Dune" and "The Hobbit" both appear 3 times
+
+console.log("Most read book after tie:", mostReadBook(readingLog));
+// Expected: Either "Dune" or "The Hobbit" (current function only returns one)
+
